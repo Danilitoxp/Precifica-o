@@ -1,0 +1,265 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #18181b;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
+
+#Precificação {
+    display: flex;
+    flex-direction: column;
+    justify-content: spa;
+    width: 400px;
+    height: 100%;
+    gap: 2rem;
+    padding: 2rem;
+    color: #f8fafc;
+    background-color: #262626;
+    border-radius: 8px;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#title {
+    text-align: center;
+    font-size: 2.25rem;
+    position: relative;
+}
+
+.config {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.config button {
+    width: 100%;
+    height: 50px;
+}
+
+#Premium {
+    background-color: purple;
+    border-radius: 3px;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#Premium:hover {
+    background-color: rgb(213, 0, 213);
+}
+
+#Classico {
+    background-color: rgb(158, 158, 1);
+    border-radius: 3px;
+    border: none;
+    color: #18181b;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+#Classico:hover {
+    background-color: yellow;
+}
+
+.input-box {
+    position: relative;
+}
+
+
+.info-icon {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    color: #3498db;
+    cursor: pointer;
+}
+
+.info-tooltip {
+    position: absolute;
+    display: none;
+    background-color: #3498db;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.input-box:hover .info-tooltip {
+    display: block;
+}
+
+.input-field {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3f3f46;
+    padding: 0.3rem;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.input-field span,
+.input-field i {
+    color: #cbd5e1;
+    font-size: 1.3rem;
+    padding: 0.6rem 1rem;
+}
+
+.input-field input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.3rem;
+    color: #f8fafc;
+    padding: 0 0.5rem;
+}
+
+.input-field input::-webkit-outer-spin-button,
+.input-field input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.input-field span {
+    width: 65px;
+}
+
+#calculate {
+    border: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #f8fafc;
+    background-color: #16a34a;
+    padding: 0.7rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+#calculate:hover {
+    background-color: #00ff5e;
+}
+
+#result {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    align-items: center;
+    border-top: 1px solid #ffffff34;
+    padding: 0.75rem 0;
+}
+
+#ml {
+    margin: 0 auto;
+    width: 50px;
+}
+
+#result span {
+    font-size: 1.4rem;
+}
+
+#bmi {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2.25rem;
+}
+
+#bmi span:last-child {
+    font-size: 0.875rem;
+    color: #cbd5e1;
+}
+
+.normal {
+    color: #16a34a;
+}
+
+.attention {
+    color: #dc2626;
+}
+
+#result #value {
+    font-size: 2.5rem;
+}
+
+#description {
+    text-align: center;
+    width: 100%;
+}
+
+#more_info {
+    text-align: center;
+    border-top: 1px solid #ffffff34;
+    padding-top: 1.5rem;
+}
+
+#more_info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+    color: #16a34a;
+    font-size: 0.875rem;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+#more_info a:hover {
+    color: #cbd5e1;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1024px) {
+    #title {
+        font-size: 1.25rem;
+        position: relative;
+    }
+
+    #img {
+        display: none;
+    }
+
+    .attention {
+        color: #dc2626;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #title {
+        font-size: 2rem;
+        position: relative;
+    } 
+}

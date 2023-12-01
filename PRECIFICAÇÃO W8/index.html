@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Precificação Online | E-Commerce</title>
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main id="container">
+
+      <section id="Precificação">
+
+        <form id="form">
+          <h1 id="title">Mercado Livre</h1>
+
+          <div class="config">
+            <button id="Premium">Premium</button>
+            <button id="Classico">Classico</button>
+          </div>
+
+
+          <div class="input-box">
+            <label for="Custo">Custo do Produto</label>
+            <div class="input-field">
+              <span>R$</span>
+              <input type="number" id="Custo" name="Custo" required />
+              <i class="fa-solid fa-Custo-hanging"></i>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="Custo">Margem Desejada</label>
+            <div class="input-field">
+              <span>%</span>
+              <input type="number" id="Custo" name="Custo" required />
+              <i class="fa-solid fa-Custo-hanging"></i>
+            </div>
+          </div>
+
+          <button id="calculate">Calcular</button>
+        </form>
+
+        <div id="infos" class="hidden">
+          <div id="result">
+            <div id="bmi">
+              <span>Seu IMC</span>
+              <span id="value"></span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+
+          <div id="more_info">
+            <a href="https://mundoeducacao.uol.com.br/saude-bem-estar/imc.htm">
+              Mais informações sobre o IMC
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
